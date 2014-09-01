@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<config>
+	<options name="detail" label="detail">
+		<col seq="0" label="" info="Text" id=" " name="/(LB5ueA)" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
+		<col seq="0" label="" info="Forfaldsmåned" id=" " name="/(PPFOF)" class="" width="" hId=" " hName=" " hDoc=" ">2</col>
+		<col seq="0" label="" info="Betalingstermin" id=" " name="/(PPBTE)" class="" width="" hId="help1" hName="f1" hDoc="Indtast html document">3</col>
+		<col seq="0" label="" info="Policens status" id=" " name="/(LIr4A)" class="" width="" hId=" " hName=" " hDoc=" ">4</col>
+		<col seq="0" label="" info="ISO date" id=" " name="/(OD20A)" class="" width="" hId=" " hName=" " hDoc=" ">5</col>
+		<col seq="0" label="" info="Aktuel ratepræmie formateret" id=" " name="/(LI1dnA)" class="" width="" hId="help2" hName="f2" hDoc="Indtast html document">6</col>
+		<col seq="0" label="" info="Vilkår nummer" id=" " name="/(LI21sA)" class="" width="" hId="help3" hName="f3" hDoc="Indtast html document">7</col>
+		<col seq="0" label="" info="Web Aktuel ratepræmie" id=" " name="/(LIqqA)" class="" width="" hId=" " hName=" " hDoc=" ">8</col>
+		<col seq="0" label="" info="Brevnummer_CLB" id=" " name="/(PPBRV)" class="" width="" hId=" " hName=" " hDoc=" ">9</col>
+		<col seq="0" label="" info="Text" id=" " name="/(LB5i2A)" class="" width="" hId=" " hName=" " hDoc=" ">10</col>
+		<col seq="0" label="" info="Policetype_tekst" id=" " name="/(LB3zdA)" class="" width="" hId=" " hName=" " hDoc=" ">11</col>
+		<col seq="0" label="" info="Aktuel ratepræmie pr termin" id=" " name="/(LI2k6A)" class="" width="" hId=" " hName=" " hDoc=" ">12</col>
+		<col seq="0" label="" info="Aktuel ratepræmie årlig" id=" " name="/(LI2k7A)" class="" width="" hId="help4" hName="f4" hDoc="Indtast html document">13</col>
+		<col seq="0" label="" info="Opdateringskode" id=" " name="/(LI24iA)" class="" width="" hId=" " hName=" " hDoc=" ">14</col>
+	</options>
+	<options name="mFors" label="mDetail">
+		<col seq="0" label="" info="Kundenavn NANAV" id=" " name="/(NANAV)" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
+		<col seq="0" label="" info="Personnummer bindestreg WEB" id=" " name="/(LI1coA)" class="" width="" hId=" " hName=" " hDoc=" ">2</col>
+	</options>
+	<options name="mPInfo" label="mDetail">
+		<col seq="0" label="" info="Campingvogn" id=" " name="/(LI1fbA)" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
+		<col seq="0" label="" info="Stationær campingvogn" id=" " name="/(LI1fcA)" class="" width="" hId=" " hName=" " hDoc=" ">2</col>
+		<col seq="0" label="" info="Teltvogn" id=" " name="/(LI1fdA)" class="" width="" hId=" " hName=" " hDoc=" ">3</col>
+		<col seq="0" label="" info="Trailer" id=" " name="/(LI1feA)" class="" width="" hId=" " hName=" " hDoc=" ">4</col>
+		<col seq="0" label="" info="Registreringsnummer auto_CLB" id=" " name="/(B1REG)" class="" width="" hId=" " hName=" " hDoc=" ">5</col>
+		<col seq="0" label="" info="Stelnummer" id=" " name="/(B1STL)" class="" width="" hId=" " hName=" " hDoc=" ">6</col>
+		<col seq="2" label="" info="Fabrikat" id=" " name="/(LI2mrA)" class="" width="" hId=" " hName=" " hDoc=" ">7</col>
+		<col seq="3" label="" info="Oprindelig nyværdi" id=" " name="/(LI2mtA)" class="" width="" hId="help4" hName="f4" hDoc="T15_nyværdi">8</col>
+		<col seq="1" label="" info="Type" id=" " name="/(LI2muA)" class="" width="" hId=" " hName=" " hDoc=" ">9</col>
+		<col seq="4" label="" info="Årgang" id=" " name="/(LI2mvA)" class="" width="" hId=" " hName=" " hDoc=" ">10</col>
+	</options>
+	<options name="mDaek" label="mDetail">
+		<col seq="1" label="" info="Kasko" id=" " name="/(LI1baA)" class="" width="" hId="help4" hName="f4" hDoc="T15_kasko">1</col>
+		<col seq="3" label="" info="Indbosum" id=" " name="/(LI1e9A)" class="" width="" hId="help5" hName="f5" hDoc="T15_indbo">2</col>
+		<col seq="4" label="" info="Ekstraudstyr" id=" " name="/(LI1eaA)" class="" width="" hId="help6" hName="f6" hDoc="T15_udstyr">3</col>
+		<col seq="2" label="LB vejhjælp" info="Vejhjælp" id=" " name="/(LI33eA)" class="" width="" hId="help9" hName="f9" hDoc="T10_vejhjaelp">4</col>
+		<col seq="4" label="" info="Ekstraudstyr" id=" " name="/(LI2mqA)" class="" width="" hId="help6" hName="f6" hDoc="T15_udstyr">5</col>
+		<col seq="3" label="" info="Indbosum" id=" " name="/(LI2msA)" class="" width="" hId="help5" hName="f5" hDoc="T15_indbo">6</col>
+	</options>
+	<options name="mSelvRis" label="mDetail">
+		<col seq="1" label="Selvrisiko" info="Selvrisiko" id=" " name="/(LI1cqA)" class="" width="" hId="help10" hName="f10" hDoc="T15_selvrisiko">1</col>
+	</options>
+	<options name="mKlausul" label="mDetail">
+		<col seq="0" label="" info="Klausuler" id=" " name="/(LI1ffA)" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
+		<col seq="0" label="" info="Specialklausultekst" id=" " name="/(LI1e6A)" class="" width="" hId=" " hName=" " hDoc=" ">2</col>
+	</options>
+	<options name="mBetF" label="mDetail">
+		<col seq="0" label="" info="Aktuel ratepræmie formateret" id=" " name="/(LI1dnA)" class="" width="" hId="help10" hName="f10" hDoc="Txx_pris">1</col>
+		<col seq="0" label="" info="Rabattekst" id=" " name="/(LI1zrA)" class="" width="" hId=" " hName=" " hDoc=" ">2</col>
+		<col seq="0" label="" info="Betalingsmåneder" id=" " name="/(LI1zqA)" class="" width="" hId=" " hName=" " hDoc=" ">3</col>
+		<col seq="1" label="" info="Betalingstermin" id=" " name="/(LI1dgA)" class="" width="" hId="help11" hName="f11" hDoc="Txx_termin">4</col>
+		<col seq="0" label="" info="PoliceInfo_PBS_tilmeld" id=" " name="/(LI1dfA)" class="" width="" hId="help12" hName="f12" hDoc="Txx_BetalingPBS">5</col>
+2		<col seq="0" label="" info="Policens status" id=" " name="/(LIr4A)" class="" width="" hId=" " hName=" " hDoc=" ">6</col>
+		<col seq="0" label="" info="Ikraft fra" id=" " name="/(LI1znA)" class="" width="" hId=" " hName=" " hDoc=" ">7</col>
+		<col seq="0" label="" info="Ophørsdato" id=" " name="/(LI1zoA)" class="" width="" hId=" " hName=" " hDoc=" ">8</col>
+		<col seq="0" label="" info="Betalt" id=" " name="/(LI1zpA)" class="" width="" hId=" " hName=" " hDoc=" ">9</col>
+		<col seq="1" label="" info="Betalingstermin" id=" " name="/(LI2mpA)" class="" width="" hId="help11" hName="f11" hDoc="Txx_termin">10</col>
+	</options>
+	<options name="mBoks1" label="mDetail">
+		<col seq="0" label="" info="Vilkår nummer" id=" " name="/(LI21sA)" class="" width="" hId="help14" hName="f14" hDoc="T15_vilk_151">1</col>
+	</options>
+	<options name="mBoks2" label="Pris (inkl. skadeforsikringsafgift)">
+		<col seq="1" label="Pris pr. betalingstermin" info="Aktuel ratepræmie pr termin" id=" " name="/(LI2k6A)" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
+		<col seq="2" label="Total årlig pris" info="Aktuel ratepræmie årlig" id=" " name="/(LI2k7A)" class="" width="" hId="help18" hName="f18" hDoc="Txx_AarligPris">2</col>
+	</options>
+	<options name="mBoks10" label="Gebyrer/bidrag">
+		<col seq="1" label="Betalingsservice" info="Pris ved BS" id=" " name="/(LBakyA)" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
+		<col seq="2" label="Giro" info="Pris ved giro" id=" " name="/(LBakzA)" class="" width="" hId=" " hName=" " hDoc=" ">2</col>
+		<col seq="0" label="" info="Skrot prm BSSKROT" id=" " name="/(BSSKROT)" class="" width="" hId=" " hName=" " hDoc=" ">3</col>
+		<col seq="0" label="" info="Fast årlig afgiftsbeløb" id=" " name="/(BSAFG)" class="" width="" hId=" " hName=" " hDoc=" ">4</col>
+		<col seq="0" label="" info="Stormflodsbidrag" id=" " name="/(SSSTORMP)" class="" width="" hId=" " hName=" " hDoc=" ">5</col>
+		<col seq="0" label="" info="WRK09" id=" " name="/(LB1xgA)" class="" width="" hId=" " hName=" " hDoc=" ">6</col>
+	</options>
+	<options name="TBE115" desc="">
+		<col seq="1" label="" info="Betalingstermin" id="LI2mpA" name="LI2mpA" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
+		<col seq="2" label="" info="Ekstraudstyr" id="LI2mqA" name="LI2mqA" class="" width="" hId=" " hName=" " hDoc=" ">2</col>
+		<col seq="3" label="" info="Fabrikat" id="LI2mrA" name="LI2mrA" class="" width=" " hId=" " hName=" " hDoc=" ">3</col>
+		<col seq="4" label="" info="Indbosum" id="LI2msA" name="LI2msA" class="" width="" hId=" " hName=" " hDoc=" ">4</col>
+		<col seq="5" label="" info="Oprindelig nyværdi" id="LI2mtA" name="LI2mtA" class="" width=" " hId=" " hName=" " hDoc=" ">5</col>
+		<col seq="6" label="" info="Type" id="LI2muA" name="LI2muA" class="" width="" hId=" " hName=" " hDoc=" ">6</col>
+		<col seq="7" label="" info="Årgang" id="LI2mvA" name="LI2mvA" class="" width=" " hId=" " hName=" " hDoc=" ">7</col>
+		<col seq="8" label="" info="Vejhjælp" id="LI3ovA" name="LI3ovA" class="" width="25" hId=" " hName=" " hDoc=" ">8</col>
+	</options>
+	<events>
+		<event seq="0" label="" info="Beregn" formId="TBE115" onClick="" AddToMenu="" align="bottom" width="" RestrictedAccess="No">1</event>
+		<event seq="0" label="" info="Vis Vejledning_event" formId="LIzoF" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">2</event>
+		<event seq="0" label="" info="Vis skadeliste pr police" formId="MESKE0" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">3</event>
+		<event seq="0" label="" info="Police oversigt" formId="MEE1AL" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">4</event>
+		<event seq="0" label="" info="Q_A" formId="MEE2AL" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">5</event>
+		<event seq="0" label="" info="Anmeld Skade" formId="LI18xF" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">6</event>
+		<event seq="0" label="" info="Bestil kopipolice ny" formId="LI2diF" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">7</event>
+		<event seq="0" label="" info="Bestil girokort ny" formId="LI2dhF" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">8</event>
+		<event seq="0" label="" info="Tilmeld BS" formId="LI259F" onClick="" AddToMenu="" align="top" width="" RestrictedAccess="No">9</event>
+	</events>
+	<function>
+		<fnc>
+			<ExtOnReady>
+	<![CDATA[
+if (! parent.SID) {
+	if (parseInt(/(LI2k6A)) == 0) {
+		consumerSocket.postMessage("Beregn - Anhænger - Indtast");
+	} else {
+		consumerSocket.postMessage("Beregn - Anhænger - kvittering");
+	}
+}      			
+]]>
+			</ExtOnReady>
+			<src>
+				<!--Javascript source to be include in head section-->
+
+function trailerType ()
+{
+    // Der kan ikke vælges vejhjælp, indbosum eller
+    // ekstraudstyr til trailere.
+    if ($(this).val() == "Trailer")
+    {
+	// Vejhjælp
+	$("#LI3ovA").prop("selectedIndex", 1);
+	$("#LI3ovA").prop("disabled", true);
+	//Indbosum
+	$("#LI2msA").prop("selectedIndex", 0);
+	$("#LI2msA").prop("disabled", true);
+	//Ekstraudstyr
+	$("#LI2mqA").prop("selectedIndex", 0);
+	$("#LI2mqA").prop("disabled", true);
+    }
+    else
+    {
+	// Vejhjælp
+	$("#LI3ovA").prop("disabled", false);
+	//Indbosum
+	$("#LI2msA").prop("disabled", false);
+	//Ekstraudstyr
+	$("#LI2mqA").prop("disabled", false);
+    }
+}
+
+function selskabsSpecifikInit ()
+{
+    var lb = new RegExp("lb.dk");
+    var runa = new RegExp("runa.dk");
+    var bauta = new RegExp("bauta.dk");
+    var fdm = new RegExp("fdmforsikring.dk");
+
+    if (lb.test(document.URL))
+    {
+	setVejhjaelpLabel("LB");
+    }   
+    else if (runa.test(document.URL)) 
+    {
+	setVejhjaelpLabel("Runa");
+    }
+    else if (bauta.test(document.URL)) 
+    {
+	setVejhjaelpLabel("Bauta");
+    }
+    else if (fdm.test(document.URL)) 
+    {
+	// FDM tilbyder ikke vejhjælp - Vejhjælp skjules. 
+	$("#LI3ovA").closest("div.row").hide();
+    }
+}
+
+function setVejhjaelpLabel(selskabsNavn)
+{
+    var label = $("#LI3ovA").closest("div.row").find("u");
+    $(label).text(selskabsNavn + " vejhjælp");
+}
+
+$(document).ready(
+    function () 
+    {
+	selskabsSpecifikInit ();
+	// Type
+	$("#LI2muA").change(trailerType);
+    });
+
+
+			</src>
+		</fnc>
+	</function>
+</config>
