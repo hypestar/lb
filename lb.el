@@ -11,7 +11,6 @@ which filename ends with .col.xml"
   (setq jd/lb-filename (s-suffix? ".col.xml" (buffer-file-name))))
 
 
-
   ;;  <col seq="0" label="" info="Text" id=" " name="/(LB5ueA)" class="" width="" hId=" " hName=" " hDoc=" ">1</col>
 (defun jd/lb-build-name-alist ()
   (interactive)
@@ -28,28 +27,33 @@ which filename ends with .col.xml"
 	  (progn 
 	      (setq _line (buffer-substring-no-properties col-start col-end))
 	      (setq wrk-list (append wrk-list (list _line)))))))
-    (set-buffer (get-buffer-create "*DuggiDebug*")) 
-    (erase-buffer)
-    (nxml-mode)
-    (mapcar (lambda (x)
-	      (let 
-		  ((name nil)
-		   (info nil))
-		(string-match "info=\"[[:alpha:] \| [:digit:] \| \s- \| _]*" x)
-		(setq info (match-string 0 x))
-		(string-match " name=\"[[:alpha:] \| [:digit:] \| // \| ( \| )]*" x)
-		(setq name (match-string 0 x))
-		(if (and name info)
-		    (setq jd/lb-info-name-list (append jd/lb-info-name-list (list name info))))))
-	    wrk-list)))
+    (mapcar 'jd/lb-extract-info-and-name wrk-list)))
 
+
+(defun jd/lb-extract-info-and-name (col-tag-string)
+  (let ((name nil)
+	(info nil))
+    (setq info (jd/lb-extract-info col-tag-string))
+    (setq name (jd/lb-extract-name col-tag-string))
+    (if (and name info)
+	(setq jd/lb-info-name-list (append jd/lb-info-name-list (list name info))))))
+
+
+(defun jd/lb-extract-info (col-tag-string)
+  (string-match "info=\"[[:alpha:] \| [:digit:] \| \s- \| _]*" col-tag-string)
+  (setq info (match-string 0 col-tag-string)))
+
+
+(defun jd/lb-extract-name (col-tag-string)
+  (string-match " name=\"[[:alpha:] \| [:digit:] \| // \| ( \| )]*" col-tag-string)
+  (setq name (match-string 0 col-tag-string)))
 
 
 (defun jd/lb-test ()
   (interactive)
   (eval-buffer "lb.el")  
   (with-current-buffer "TBP.HTM.col.xml" (jd/lb-build-name-alist))
-  )
+)
 
 (key-chord-define-global "vb" 'jd/lb-test)
 (provide 'lb)
