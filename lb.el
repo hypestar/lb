@@ -1,8 +1,7 @@
 (require 's)
 
 (defvar jd/lb-info-name-list nil
-"This list holds the implementation name and the friendly name of Plex objects"
-)
+"This list holds the implementation name and the friendly name of Plex objects")
 
 (defun jd/lb-buffer-is-col-xml ()
   "Determines wether the current buffer is visiting af file
@@ -51,8 +50,7 @@ which filename ends with .col.xml"
     (string-match " name=\"[[:alpha:] \| [:digit:] \| // \| ( \| )]*" col-tag-string)
     (setq name (match-string 0 col-tag-string))
     (setq name (replace-regexp-in-string " name=\\\"/" "" name))
-    (setq name (replace-regexp-in-string "[()]" "" name))
-    ))
+    (setq name (replace-regexp-in-string "[()]" "" name))))
 
 
 (defun jd/lb-test ()
@@ -60,8 +58,7 @@ which filename ends with .col.xml"
   (eval-buffer "lb.el")
   (setq jd/lb-info-name-list nil)
   (with-current-buffer "TBP.HTM.col.xml" (jd/lb-build-name-alist))
-  (message "lb test done")
-)
+  (message "lb test done"))
 
 (key-chord-define-global "vb" 'jd/lb-test)
 (provide 'lb)
