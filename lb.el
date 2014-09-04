@@ -40,19 +40,27 @@ which filename ends with .col.xml"
 
 
 (defun jd/lb-extract-info (col-tag-string)
-  (string-match "info=\"[[:alpha:] \| [:digit:] \| \s- \| _]*" col-tag-string)
-  (setq info (match-string 0 col-tag-string)))
+  (let ((info nil))
+    (string-match "info=\"[[:alpha:] \| [:digit:] \| \s- \| _]*" col-tag-string)
+    (setq info (match-string 0 col-tag-string))
+    (setq info (replace-regexp-in-string "info=\\\"" "" info))))
 
 
 (defun jd/lb-extract-name (col-tag-string)
-  (string-match " name=\"[[:alpha:] \| [:digit:] \| // \| ( \| )]*" col-tag-string)
-  (setq name (match-string 0 col-tag-string)))
+  (let ((name nil))
+    (string-match " name=\"[[:alpha:] \| [:digit:] \| // \| ( \| )]*" col-tag-string)
+    (setq name (match-string 0 col-tag-string))
+    (setq name (replace-regexp-in-string " name=\\\"/" "" name))
+    (setq name (replace-regexp-in-string "[()]" "" name))
+    ))
 
 
 (defun jd/lb-test ()
   (interactive)
-  (eval-buffer "lb.el")  
+  (eval-buffer "lb.el")
+  (setq jd/lb-info-name-list nil)
   (with-current-buffer "TBP.HTM.col.xml" (jd/lb-build-name-alist))
+  (message "lb test done")
 )
 
 (key-chord-define-global "vb" 'jd/lb-test)
