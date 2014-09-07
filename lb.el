@@ -58,7 +58,9 @@ which filename ends with .col.xml"
   (eval-buffer "lb.el")
   (setq jd/lb-info-name-list nil)
   (with-current-buffer "TBP.HTM.col.xml" (jd/lb-build-name-alist))
-  (message "lb test done"))
+  (message (concat "Du valgte " (ido-completing-read "Vælg et Plexobjektnavn : " jd/lb-info-name-list)))
+  ;;(message "lb test done")
+  )
 
 (key-chord-define-global "vb" 'jd/lb-test)
 (provide 'lb)
