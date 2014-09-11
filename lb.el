@@ -34,8 +34,7 @@ which filename ends with .col.xml"
 	(info nil))
     (setq info (jd/lb-extract-info col-tag-string))
     (setq name (jd/lb-extract-name col-tag-string))
-    (if (and name info)
-	(setq jd/lb-info-name-list (append jd/lb-info-name-list (list name info))))))
+    (push (cons name info) jd/lb-info-name-list)))
 
 
 (defun jd/lb-extract-info (col-tag-string)
@@ -49,8 +48,8 @@ which filename ends with .col.xml"
   (let ((name nil))
     (string-match " name=\"[[:alpha:] \| [:digit:] \| // \| ( \| )]*" col-tag-string)
     (setq name (match-string 0 col-tag-string))
-    (setq name (replace-regexp-in-string " name=\\\"/" "" name))
-    (setq name (replace-regexp-in-string "[()]" "" name))))
+    (setq name (replace-regexp-in-string " name=\\\"" "" name))
+    (setq name (replace-regexp-in-string "[/()]" "" name))))
 
 
 (defun jd/lb-test ()
@@ -58,11 +57,19 @@ which filename ends with .col.xml"
   (eval-buffer "lb.el")
   (setq jd/lb-info-name-list nil)
   (with-current-buffer "TBP.HTM.col.xml" (jd/lb-build-name-alist))
-  (message (concat "Du valgte " (ido-completing-read "Vælg et Plexobjektnavn : " jd/lb-info-name-list)))
-  ;;(message "lb test done")
-  )
+  
+  (switch-to-buffer (get-buffer-create "*DuggiDebug*"))
+  (erase-buffer)
+  (mapcar (lambda (pair) 
+	    (insert (concat "CAR : " (car pair)))
+	    (insert (concat "   CDR : " (cdr pair)))
+	    (newline)
+	    )  
+	  ;;(message (concat "Du valgte " (ido-completing-read "Vælg et Plexobjektnavn : " jd/lb-info-name-list)))
+	  ;;(message "lb test done")
+	  jd/lb-info-name-list)
 
-(key-chord-define-global "vb" 'jd/lb-test)
+  (key-chord-define-global "vb" 'jd/lb-test))
 (provide 'lb)
 ;;; lb.el ends here
 
